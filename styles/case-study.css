@@ -1372,8 +1372,8 @@ main.cs{display:block}
   .cs-impact-cell{
     padding:28px 0;
     border-right:0;
-    border-bottom:1px solid var(--line);
   }
+  .cs-impact-cell:not(:last-child){border-bottom:1px solid var(--line)}
   .cs-impact-cell:first-child{padding-top:8px}
   .cs-impact-cell:last-child{border-bottom:0;padding-bottom:8px}
   .cs-impact-cell-value{font-size:34px;margin-bottom:4px}

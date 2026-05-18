@@ -713,6 +713,8 @@ html.locked,body.locked{overflow:hidden;height:100%}
 
   .marquee{max-width:calc(var(--container) - 44px)}
 
+  .hero-c .ticker{max-width:100%}
+
   /* Nav — keep full menu visible on tablet (don't hide items until ≤720px) */
   nav.top{top:max(14px, var(--safe-top));padding:5px 5px 5px 14px;max-width:calc(100vw - 24px);gap:4px}
   nav.top ul{gap:0;padding:0 2px}
