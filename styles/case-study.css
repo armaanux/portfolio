@@ -1183,12 +1183,10 @@ main.cs{display:block}
 .cs-impact-cell:nth-last-child(-n+2){
   border-bottom:0;
 }
-.cs-impact-cell:first-child,
-.cs-impact-cell:nth-child(3){
+.cs-impact-cell:nth-child(odd){
   padding-left:0;
 }
-.cs-impact-cell:nth-child(2),
-.cs-impact-cell:last-child{
+.cs-impact-cell:nth-child(even){
   padding-right:0;
 }
 .cs-impact-cell-value{
@@ -1316,10 +1314,8 @@ main.cs{display:block}
 
   /* Impact grid: 2-col stays 2-col on tablet, tighten padding */
   .cs-impact-cell{padding:32px 28px}
-  .cs-impact-cell:first-child,
-  .cs-impact-cell:nth-child(3){padding-left:0}
-  .cs-impact-cell:nth-child(2),
-  .cs-impact-cell:last-child{padding-right:0}
+  .cs-impact-cell:nth-child(odd){padding-left:0}
+  .cs-impact-cell:nth-child(even){padding-right:0}
   .cs-impact-cell-value{font-size:clamp(32px,5vw,44px)}
 
   /* 2-col system grid: vertical separator on odd cells, bottom on all but last row */
