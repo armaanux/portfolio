@@ -653,8 +653,11 @@ footer .links{display:flex;gap:24px}
 
 .wordmark{padding:80px 0 40px;text-align:center;overflow:hidden;display:flex;justify-content:center;align-items:center;position:relative;z-index:2}
 .wordmark::after{content:"";position:absolute;left:0;right:0;bottom:-120px;height:200px;background:linear-gradient(180deg,transparent 0%,var(--bg) 70%);pointer-events:none;z-index:-1}
-.wordmark .logo-mark{width:min(82vw,1160px);height:auto;color:var(--fg);opacity:.42}
-.wordmark .logo-mark path{fill:none;stroke:currentColor;stroke-width:.18;vector-effect:non-scaling-stroke;paint-order:stroke}
+.wordmark .logo-mark{width:min(82vw,1160px);height:auto;color:var(--accent)}
+.wordmark .logo-mark path{fill:none;stroke:url(#rmn-shimmer);stroke-width:.18;vector-effect:non-scaling-stroke;paint-order:stroke}
+@media (prefers-reduced-motion: reduce){
+  .wordmark .logo-mark path{stroke:var(--accent)}
+}
 
 
 /* ---------- 9. PRELOADER ---------- */
@@ -909,7 +912,7 @@ html.locked,body.locked{overflow:hidden;height:100%}
 
   /* Wordmark */
   .wordmark{padding:40px 0 0}
-  .wordmark .logo-mark{width:90vw;opacity:.5}
+  .wordmark .logo-mark{width:90vw}
 
   /* Footer */
   footer{padding:32px 0 max(28px, var(--safe-bottom))}
