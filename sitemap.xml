@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+  <url>
+    <loc>https://armaanux.in/</loc>
+    <lastmod>2026-05-18</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+    <image:image>
+      <image:loc>https://armaanux.in/assets/og-image.jpg</image:loc>
+      <image:title>Armaan Parvez — Product Designer</image:title>
+      <image:caption>Independent product designer for SaaS, web and mobile apps.</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://armaanux.in/nutriflow.html</loc>
+    <lastmod>2026-05-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+    <image:image>
+      <image:loc>https://armaanux.in/assets/nutriflow/og.jpg</image:loc>
+      <image:title>NutriFlow, Designing a Connected Nutrition Platform</image:title>
+      <image:caption>Case study: a nutrition mobile app rebuilt and a nutritionist dashboard designed from scratch, into one connected platform.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://armaanux.in/assets/nutriflow/hero.png</image:loc>
+      <image:title>NutriFlow connected nutrition platform, hero composition</image:title>
+      <image:caption>Nutritionist dashboard alongside the redesigned client mobile app.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://armaanux.in/assets/nutriflow/dashboard-client-progress.png</image:loc>
+      <image:title>Nutritionist dashboard, client progress</image:title>
+      <image:caption>Weight, biometrics, macros, and the full 27 micronutrients with trend charts.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://armaanux.in/assets/nutriflow/mobile-logging.png</image:loc>
+      <image:title>NutriFlow mobile app, meal logging</image:title>
+      <image:caption>Three meal-logging paths: photo plus AI, barcode scan, and nutrition label.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://armaanux.in/assets/nutriflow/mobile-biometrics.png</image:loc>
+      <image:title>NutriFlow mobile app, biometric tracking</image:title>
+      <image:caption>Tracking ketones, glucose, mood, macros, and 27 micronutrients.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://armaanux.in/assets/nutriflow/create-ai-meal.png</image:loc>
+      <image:title>NutriFlow nutritionist dashboard, AI-assisted meal creation</image:title>
+      <image:caption>Generate meals across multiple diet styles with AI assistance.</image:caption>
+    </image:image>
+  </url>
+</urlset>

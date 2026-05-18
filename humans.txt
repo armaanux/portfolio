@@ -1,0 +1,24 @@
+/* ABOUT ME */
+  Designer: Armaan Parvez
+  Email: helloarmaanux@gmail.com
+  From: India · Available worldwide (remote)
+  LinkedIn: https://www.linkedin.com/in/armaanux
+  Instagram: https://www.instagram.com/armaanless
+  Figma: https://www.figma.com/@armaanux
+
+/* THANKS */
+  To every client who trusted me with their product.
+
+/* SITE */
+  Last update: 28 May 2026
+  Standards: HTML5, CSS3, modern JS
+  Components: Hand-crafted, no framework
+  Typefaces: Geist, Instrument Sans
+  Built with: Care, restraint, and a lot of iteration.
+
+                          _   _
+                         | |_| |
+       _____  ____  _____| |_| |
+      |  _  ||  _ \|     |  _  |
+      |__|__||_| |_|__|__|_| |_|
+

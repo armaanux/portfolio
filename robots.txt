@@ -1,0 +1,50 @@
+User-agent: *
+Allow: /
+# /case-study.html (placeholder) and /404.html carry their own <meta name="robots" content="noindex">
+# Don't Disallow them — Google needs to crawl the page to read the noindex tag.
+
+# AI / LLM crawlers — opt in (boosts discoverability in ChatGPT, Claude, Perplexity, etc.)
+User-agent: GPTBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: OAI-SearchBot
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: Claude-Web
+Allow: /
+
+User-agent: Claude-SearchBot
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: Perplexity-User
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+User-agent: CCBot
+Allow: /
+
+User-agent: anthropic-ai
+Allow: /
+
+User-agent: Applebot-Extended
+Allow: /
+
+User-agent: Bytespider
+Allow: /
+
+User-agent: meta-externalagent
+Allow: /
+
+Host: https://armaanux.in
+Sitemap: https://armaanux.in/sitemap.xml

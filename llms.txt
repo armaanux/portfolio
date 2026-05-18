@@ -1,0 +1,60 @@
+# Armaan Parvez
+
+> Independent product designer crafting modern UI/UX for SaaS products, mobile apps, and marketing websites. Based in India, available worldwide.
+
+Armaan Parvez is a freelance / independent product designer with 4+ years of experience and 45+ client collaborations. He focuses on translating ambiguous product ideas into clear, modern, opinionated interfaces — from landing pages to full SaaS dashboards to mobile apps.
+
+## Hire / Contact
+
+- Email: helloarmaanux@gmail.com
+- LinkedIn: https://www.linkedin.com/in/armaanux
+- Status: Available for work (as of June 2026)
+- Location: India · Remote-first · works with clients worldwide
+- Typical engagement: 2–8 week sprints, fixed-scope or retainer
+
+## Services
+
+- Product design for SaaS dashboards and web apps
+- Mobile app design (iOS and Android)
+- Marketing websites & landing pages
+- Design systems and UI component libraries
+- Brand identity for digital-first products
+- Prototyping and design-to-dev handoff
+- UX audits and redesigns of existing products
+- Founder / early-stage design partner
+
+## How he works
+
+- Collaborative, async-friendly, fast iteration
+- Comfortable starting from rough briefs, sketches, or "we don't know yet"
+- Ships in Figma; builds with developer handoff in mind
+- Prefers small focused projects over large agency-style scope
+- Will say no to projects that don't fit
+
+## Tools
+
+Figma, Framer, Webflow, Notion, Cursor, VS Code, Linear, Claude, Spline, Lottie, Principle, Photoshop, Illustrator, Notion, Creative Cloud, Perplexity, ChatGPT, Google Analytics and more.
+
+## Best for
+
+- Pre-seed to Series B startups
+- Solo founders shipping their first product
+- Existing SaaS teams needing a design refresh or new feature surface
+- Anyone who wants a designer who actually cares about the details
+
+## What he is NOT
+
+- Not an agency
+- Not a logo-only / brand-only designer
+- Not interested in template-style work
+- Not available for unpaid spec work
+
+## Case studies
+
+- NutriFlow, Designing a Connected Nutrition Platform — https://armaanux.in/nutriflow.html
+  A healthtech case study. Redesigned an unusable nutrition mobile app and designed a new nutritionist dashboard from scratch, into one connected platform across iOS, Android, and web. Scope covered mobile UX overhaul, dashboard 0 → 1, UX strategy, and a shared UI system. Features include three meal-logging paths (photo + AI, barcode, nutrition label), an 8-character code that links clients to nutritionists, biometric and mood tracking (ketones, glucose, mood, macros, 27 micronutrients), AI-assisted meal creation across multiple diet styles, and a future-safe visual system ready to evolve toward Apple Liquid Glass on iOS 26.
+
+## Links
+
+- Portfolio: https://armaanux.in
+- Case study (NutriFlow, Connected Nutrition Platform): https://armaanux.in/nutriflow.html

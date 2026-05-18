@@ -1,0 +1,766 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#0A0A0B">
+<meta name="color-scheme" content="dark">
+<meta name="robots" content="index, follow, max-image-preview:large">
+<title>Designing a Connected Nutrition Platform · NutriFlow · Armaan Parvez</title>
+<meta name="description" content="Case study: redesigning a nutrition mobile app and building a nutritionist dashboard from scratch, into one connected health platform across iOS, Android, and web.">
+<meta name="keywords" content="case study, product design, healthtech, NutriFlow, nutrition app, mobile app design, nutritionist dashboard, UX design, UI design, design system, 0 to 1, freelance product designer">
+<meta name="author" content="Armaan Parvez">
+<link rel="canonical" href="https://armaanux.in/nutriflow.html">
+<link rel="icon" href="/favicon.ico" sizes="any">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+
+<!-- Open Graph -->
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://armaanux.in/nutriflow.html">
+<meta property="og:title" content="Designing a Connected Nutrition Platform · NutriFlow Case Study">
+<meta property="og:description" content="Redesigning a nutrition mobile app and building a nutritionist dashboard from scratch, into one connected health platform across iOS, Android, and web.">
+<meta property="og:image" content="https://armaanux.in/assets/nutriflow/og.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="NutriFlow, connected nutrition platform, a case study by Armaan Parvez">
+<meta property="og:site_name" content="Armaan Parvez">
+<meta property="og:locale" content="en_US">
+<meta property="article:author" content="Armaan Parvez">
+<meta property="article:section" content="Product Design">
+<meta property="article:tag" content="Healthtech">
+<meta property="article:tag" content="Mobile App">
+<meta property="article:tag" content="Dashboard">
+
+<!-- Twitter -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Designing a Connected Nutrition Platform · NutriFlow Case Study">
+<meta name="twitter:description" content="A nutrition mobile app rebuilt and a nutritionist dashboard designed from scratch, into one connected platform across iOS, Android, and web.">
+<meta name="twitter:image" content="https://armaanux.in/assets/nutriflow/og.jpg">
+<meta name="twitter:image:alt" content="NutriFlow, connected nutrition platform, a case study by Armaan Parvez">
+
+<!-- Structured data: Article + BreadcrumbList + CreativeWork -->
+<script type="application/ld+json">
+{"@context":"https://schema.org","@graph":[
+{"@type":"Article","@id":"https://armaanux.in/nutriflow.html#article","headline":"Designing a Connected Nutrition Platform","description":"Case study: redesigning a nutrition mobile app and building a nutritionist dashboard from scratch, into one connected health platform across iOS, Android, and web.","image":"https://armaanux.in/assets/nutriflow/og.jpg","author":{"@type":"Person","@id":"https://armaanux.in/#person","name":"Armaan Parvez","url":"https://armaanux.in/"},"publisher":{"@type":"Person","@id":"https://armaanux.in/#person"},"datePublished":"2026-05-15","dateModified":"2026-05-18","inLanguage":"en","keywords":"product design, healthtech, NutriFlow, nutrition app, mobile app, dashboard, UX design, design system","articleSection":"Case Study","mainEntityOfPage":{"@type":"WebPage","@id":"https://armaanux.in/nutriflow.html"}},
+{"@type":"CreativeWork","name":"NutriFlow, Connected Nutrition Platform","description":"A nutrition product transformed from a standalone mobile app into a connected platform with a redesigned client app and a new nutritionist dashboard designed from scratch.","creator":{"@id":"https://armaanux.in/#person"},"about":["Product Design","Healthtech","Nutrition","Mobile App","Dashboard Design","UX Strategy","Design System"],"genre":"Case Study","inLanguage":"en"},
+{"@type":"BreadcrumbList","itemListElement":[
+{"@type":"ListItem","position":1,"name":"Work","item":"https://armaanux.in/#work"},
+{"@type":"ListItem","position":2,"name":"Connected Nutrition Platform","item":"https://armaanux.in/nutriflow.html"}
+]}
+]}
+</script>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Geist:wght@300;400;500;600;700&family=Instrument+Sans:ital,wght@1,400;1,500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles/index.css?v=55">
+<link rel="stylesheet" href="styles/case-study.css?v=13">
+</head>
+<body>
+
+<!-- NAV -->
+<nav class="top">
+  <a href="/" class="brand" aria-label="Armaan Parvez, home"><img src="assets/RMNLogo.svg" alt="Armaan Parvez RMN monogram logo" class="brand-logo" width="72" height="14"/></a>
+  <ul>
+    <li><a href="index.html#work">Work</a></li>
+    <li><a href="index.html#about">About</a></li>
+    <li><a href="index.html#process">Process</a></li>
+    <li><a href="index.html#services">Services</a></li>
+    <li><a href="index.html#testimonials">Testimonials</a></li>
+  </ul>
+  <a href="index.html#contact" class="cta">Contact <svg viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M3 9L9 3M9 3H4M9 3V8"/></svg></a>
+</nav>
+
+<main class="cs">
+
+  <!-- HERO -->
+  <header class="cs-hero">
+    <div class="cs-hero-glow" aria-hidden="true"></div>
+    <div class="cs-hero-gridlines" aria-hidden="true"></div>
+    <div class="container">
+
+      <a class="cs-back" href="index.html#work">
+        <svg viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 6H2M2 6L5 3M2 6L5 9"/></svg>
+        Back to all work
+      </a>
+
+      <div class="cs-hero-status">
+        <div class="l">
+          <span>Case Study, 01 / 04</span>
+          <span class="sep">•</span>
+          <span>Healthtech, Nutrition</span>
+        </div>
+      </div>
+
+      <div class="cs-hero-head">
+        <h1 class="cs-hero-title">Designing a Connected <em>Nutrition Platform.</em></h1>
+        <p class="cs-hero-sub">I rebuilt the NutriFlow mobile app, designed a new dashboard for nutritionists from scratch, and connected the two, so clients and practitioners can work on plans side by side.</p>
+        <div class="cs-hero-tags">
+          <span class="tag">Product Design</span>
+          <span class="tag">Healthtech</span>
+          <span class="tag">Mobile App</span>
+          <span class="tag">Dashboard 0 → 1</span>
+          <span class="tag">UX Strategy</span>
+          <span class="tag">UI System</span>
+        </div>
+      </div>
+
+      <div class="cs-hero-meta">
+        <div class="row"><span>Role</span><b>Product Designer</b></div>
+        <div class="row"><span>Scope</span><b>Mobile Overhaul, Dashboard 0 → 1</b></div>
+        <div class="row"><span>Platforms</span><b>iOS, Android, Web Dashboard</b></div>
+        <div class="row"><span>Industry</span><b>Healthtech, Nutrition</b></div>
+        <div class="row"><span>Timeline</span><b>2025-26</b></div>
+        <div class="row"><span>Product</span><b>NutriFlow</b></div>
+      </div>
+
+      <p class="cs-hero-confidential">
+        <span class="cs-hero-confidential-dot" aria-hidden="true"></span>
+        Real client engagement, real shipped product. "NutriFlow" is a pseudonym, and a small number of identifying details have been generalized to respect client confidentiality. The screens, design decisions, and outcomes shown here are from the actual work.
+      </p>
+
+      <!-- Hero visual: composed dashboard + mobile shot -->
+      <figure class="cs-shot cs-shot-wide cs-shot-hero-img">
+        <div class="cs-shot-frame">
+          <div class="cs-shot-bar">
+            <span class="cs-shot-dot"></span><span class="cs-shot-dot"></span><span class="cs-shot-dot"></span>
+            <span class="cs-shot-bar-label">NutriFlow, connected nutrition platform</span>
+          </div>
+          <div class="cs-shot-body cs-shot-img cs-shot-img-hero">
+            <img src="assets/nutriflow/hero.png" alt="NutriFlow connected nutrition platform: nutritionist dashboard alongside three mobile app screens showing meal logging, recipe detail, and home" width="3000" height="1800" decoding="async" fetchpriority="high">
+          </div>
+        </div>
+        <figcaption><span class="cs-shot-cap-dot"></span>One connected platform: the nutritionist's workspace on the left, the client's mobile experience on the right.</figcaption>
+      </figure>
+
+    </div>
+  </header>
+
+
+  <!-- PRODUCT TRANSFORMATION -->
+  <section class="cs-section">
+    <div class="container">
+
+      <div class="cs-prose-head reveal">
+        <div class="label">The transformation</div>
+        <h2>From a standalone app to <em>a connected platform.</em></h2>
+        <p class="cs-prose-intro">
+          The product was a single mobile app. After signup, clients were handed a nutrition plan generated entirely by the app, with no human in the loop. The interface itself felt dated, and the day-to-day flows weren't enjoyable to use. The work turned that single app into a connected platform, with a redesigned client experience and a new dashboard built for nutritionists.
+        </p>
+      </div>
+
+      <div class="cs-compare reveal d1">
+        <div class="cs-compare-side">
+          <div class="cs-compare-tag">Before</div>
+          <h3>A standalone app</h3>
+          <ul>
+            <li>Mobile-only product</li>
+            <li>Outdated, hard-to-use UI</li>
+            <li>App-generated plans only, no human option</li>
+            <li>No nutritionist side</li>
+            <li>No biometric or mood tracking</li>
+          </ul>
+        </div>
+        <div class="cs-compare-divider" aria-hidden="true"></div>
+        <div class="cs-compare-side">
+          <div class="cs-compare-tag accent">After</div>
+          <h3>A connected platform</h3>
+          <ul>
+            <li>Redesigned modern mobile app, iOS and Android</li>
+            <li>New web dashboard for nutritionists, built from scratch</li>
+            <li>Two plan paths: App-Guided or Nutritionist-Guided</li>
+            <li>8-character code links clients to a nutritionist</li>
+            <li>Mood, ketone, glucose, macros, and 27 micronutrients</li>
+          </ul>
+        </div>
+      </div>
+
+      <p class="cs-positioning reveal d2">
+        Putting automated planning, practitioner oversight, deeper nutrition data, and biometric tracking into one product gave the platform a more useful take on personalized nutrition than most apps in the space.
+      </p>
+
+    </div>
+  </section>
+
+
+  <!-- CHALLENGE -->
+  <section class="cs-section cs-section-tight">
+    <div class="container">
+
+      <div class="cs-prose-head reveal">
+        <div class="label">The challenge</div>
+        <h2>Not a visual redesign. <em>A product transformation.</em></h2>
+        <p class="cs-prose-intro">
+          The brief wasn't a UI refresh. It was turning a single, hard-to-use app into a connected product that worked for two very different user groups, without overcomplicating either side.
+        </p>
+      </div>
+
+      <ol class="cs-num-list reveal d1">
+        <li class="cs-num-item">
+          <span class="cs-num-mark">01</span>
+          <div class="cs-num-body">
+            <h3>The mobile app needed a real overhaul</h3>
+            <p>Most of the primary flows weren't usable as they stood. They all had to be reshaped.</p>
+          </div>
+        </li>
+        <li class="cs-num-item">
+          <span class="cs-num-mark">02</span>
+          <div class="cs-num-body">
+            <h3>The dashboard didn't exist</h3>
+            <p>Nutritionists had nothing on their side. A whole new product layer had to be designed from the ground up.</p>
+          </div>
+        </li>
+        <li class="cs-num-item">
+          <span class="cs-num-mark">03</span>
+          <div class="cs-num-body">
+            <h3>Two plan paths in one product</h3>
+            <p>App-Guided plans and Nutritionist-Guided plans had to live in the same product, without leaving users unsure which path they were on.</p>
+          </div>
+        </li>
+        <li class="cs-num-item">
+          <span class="cs-num-mark">04</span>
+          <div class="cs-num-body">
+            <h3>Nutrition tracking needs trust</h3>
+            <p>Macros, micronutrients, ketones, and glucose readings have to feel clear, accurate, and worth checking every day.</p>
+          </div>
+        </li>
+        <li class="cs-num-item">
+          <span class="cs-num-mark">05</span>
+          <div class="cs-num-body">
+            <h3>Simple logging, complex data</h3>
+            <p>Logging had to stay quick, even as the data behind it got richer.</p>
+          </div>
+        </li>
+        <li class="cs-num-item">
+          <span class="cs-num-mark">06</span>
+          <div class="cs-num-body">
+            <h3>Real visibility for nutritionists</h3>
+            <p>Practitioners needed live progress so they could actually adjust upcoming plans, not just look at numbers.</p>
+          </div>
+        </li>
+      </ol>
+
+    </div>
+  </section>
+
+
+  <!-- USERS + ECOSYSTEM -->
+  <section class="cs-section">
+    <div class="container">
+
+      <div class="cs-prose-head reveal">
+        <div class="label">Users and ecosystem</div>
+        <h2>Two sides of <em>one connected loop.</em></h2>
+      </div>
+
+      <div class="cs-pair reveal d1">
+        <div class="cs-pair-col">
+          <div class="cs-pair-eyebrow">Clients</div>
+          <h3>People following a nutrition plan</h3>
+          <ul>
+            <li>Get a personalized plan, either App-Guided or Nutritionist-Guided</li>
+            <li>Connect with a nutritionist using an 8-character code</li>
+            <li>Log meals quickly with photo, barcode, or label scan</li>
+            <li>Track mood, ketone, and glucose levels</li>
+            <li>See macros plus 27 vitamins and minerals</li>
+            <li>Understand the days and weeks ahead at a glance</li>
+          </ul>
+        </div>
+        <div class="cs-pair-divider" aria-hidden="true"></div>
+        <div class="cs-pair-col">
+          <div class="cs-pair-eyebrow">Nutritionists</div>
+          <h3>The new nutritionist side</h3>
+          <ul>
+            <li>Connect with clients using the 8-character code</li>
+            <li>Monitor adherence and biometric signals</li>
+            <li>Review meal logs and the nutrition breakdown</li>
+            <li>Adjust upcoming days and weeks of the plan</li>
+            <li>See progress without digging through raw data</li>
+            <li>Manage multiple clients efficiently</li>
+          </ul>
+        </div>
+      </div>
+
+      <figure class="cs-eco-figure reveal d2">
+        <div class="cs-eco-figure-frame">
+          <div class="cs-shot-bar">
+            <span class="cs-shot-dot"></span><span class="cs-shot-dot"></span><span class="cs-shot-dot"></span>
+            <span class="cs-shot-bar-label">The connected ecosystem</span>
+          </div>
+          <div class="cs-eco-figure-body">
+            <div class="cs-eco-node">
+              <span class="cs-eco-num">01</span>
+              <span class="cs-eco-tag">Mobile, Client</span>
+              <h4>Plans, logs, biometrics</h4>
+            </div>
+            <div class="cs-eco-arrow" aria-hidden="true">
+              <span class="cs-eco-code">8-character code</span>
+              <svg viewBox="0 0 80 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"><path d="M4 12h66M62 6l8 6-8 6"/></svg>
+            </div>
+            <div class="cs-eco-node">
+              <span class="cs-eco-num">02</span>
+              <span class="cs-eco-tag accent">Dashboard, Nutritionist</span>
+              <h4>Monitor, adjust upcoming plans</h4>
+            </div>
+            <div class="cs-eco-arrow" aria-hidden="true">
+              <span class="cs-eco-code">Plan updates</span>
+              <svg viewBox="0 0 80 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"><path d="M76 12H10M18 6l-8 6 8 6"/></svg>
+            </div>
+            <div class="cs-eco-node">
+              <span class="cs-eco-num">03</span>
+              <span class="cs-eco-tag">Mobile, Client</span>
+              <h4>Updated plan, new actions</h4>
+            </div>
+          </div>
+        </div>
+        <figcaption>Client app, 8-character code, nutritionist dashboard.</figcaption>
+      </figure>
+
+    </div>
+  </section>
+
+
+  <!-- STRATEGY -->
+  <section class="cs-section cs-section-tight">
+    <div class="container">
+
+      <div class="cs-prose-head reveal">
+        <div class="label">Strategy</div>
+        <h2>Three principles, <em>one connected product.</em></h2>
+      </div>
+
+      <ol class="cs-num-list cs-num-list-3col reveal d1">
+        <li class="cs-num-item">
+          <span class="cs-num-mark">01</span>
+          <div class="cs-num-body">
+            <h3>Make nutrition tracking effortless</h3>
+            <p>Three ways to log a meal: take a photo (processed with AI), scan a barcode, or scan the nutrition label. Different moments call for different methods.</p>
+          </div>
+        </li>
+        <li class="cs-num-item">
+          <span class="cs-num-mark">02</span>
+          <div class="cs-num-body">
+            <h3>Connect clients with professional support</h3>
+            <p>Right after signup, the user picks App-Guided or works with a real nutritionist. An 8-character code links the two, and from then on, every meal the nutritionist assigns flows straight into the client's plan.</p>
+          </div>
+        </li>
+        <li class="cs-num-item">
+          <span class="cs-num-mark">03</span>
+          <div class="cs-num-body">
+            <h3>Make complex nutrition data understandable</h3>
+            <p>Macros, 27 vitamins and minerals, mood, ketones, glucose. Summary up top, full detail only when someone actually wants to dig in.</p>
+          </div>
+        </li>
+      </ol>
+
+    </div>
+  </section>
+
+
+  <!-- MOBILE APP -->
+  <section class="cs-section">
+    <div class="container">
+
+      <div class="cs-prose-head reveal">
+        <div class="label">01. Mobile app</div>
+        <h2>From unusable to <em>a daily nutrition companion.</em></h2>
+        <p class="cs-prose-intro">
+          The mobile app went from something users avoided to something that actually fits into their day. Clear next action, quick logging, and health signals that matter, in that order.
+        </p>
+      </div>
+
+      <div class="cs-mob-row reveal d1">
+        <figure class="cs-mob-shot">
+          <div class="cs-mob-frame">
+            <img src="assets/nutriflow/mobile-plan-choice.png" alt="NutriFlow mobile onboarding: pick between App-Guided or Nutritionist-Guided plan" width="878" height="1804" loading="lazy" decoding="async">
+          </div>
+          <figcaption>Onboarding: pick App-Guided or Nutritionist-Guided.</figcaption>
+        </figure>
+        <figure class="cs-mob-shot">
+          <div class="cs-mob-frame">
+            <img src="assets/nutriflow/mobile-connect.png" alt="NutriFlow mobile, enter the 8-character code to connect with a nutritionist" width="878" height="1804" loading="lazy" decoding="async">
+          </div>
+          <figcaption>Connect: 8-character code links you to a nutritionist.</figcaption>
+        </figure>
+        <figure class="cs-mob-shot">
+          <div class="cs-mob-frame">
+            <img src="assets/nutriflow/mobile-home.png" alt="NutriFlow mobile home screen with calorie intake, macros, log vitals, and meal plan" width="878" height="1804" loading="lazy" decoding="async">
+          </div>
+          <figcaption>Home: today's calories, macros, and meal plan.</figcaption>
+        </figure>
+      </div>
+
+      <p class="cs-annot-line reveal d2">
+        <span class="cs-annot-mark" aria-hidden="true"></span>
+        The plan structure works for both App-Guided and Nutritionist-Guided users, without splitting the product into two different apps.
+      </p>
+
+      <div class="cs-mob-row reveal d3">
+        <figure class="cs-mob-shot">
+          <div class="cs-mob-frame">
+            <img src="assets/nutriflow/mobile-logging.png" alt="NutriFlow mobile meal logging camera with Food, Barcode, and Label tabs" width="878" height="1804" loading="lazy" decoding="async">
+          </div>
+          <figcaption>Three logging paths: AI food photo, barcode, or label.</figcaption>
+        </figure>
+        <figure class="cs-mob-shot">
+          <div class="cs-mob-frame">
+            <img src="assets/nutriflow/mobile-nutrition.png" alt="NutriFlow mobile recipe detail with macros, calories, prep time, and recipe context" width="878" height="1804" loading="lazy" decoding="async">
+          </div>
+          <figcaption>Recipe detail: macros up front, ingredients a tap away.</figcaption>
+        </figure>
+        <figure class="cs-mob-shot">
+          <div class="cs-mob-frame">
+            <img src="assets/nutriflow/mobile-biometrics.png" alt="NutriFlow Log Vitals sheet with mood emojis, glucose slider, and ketone slider" width="878" height="1804" loading="lazy" decoding="async">
+          </div>
+          <figcaption>Log Vitals: mood, glucose, and ketones in one sheet.</figcaption>
+        </figure>
+      </div>
+
+      <p class="cs-annot-line reveal d4">
+        <span class="cs-annot-mark" aria-hidden="true"></span>
+        Summary first, detail on demand. The deeper nutrition data is there when someone wants to dig in, not before.
+      </p>
+
+      <div class="cs-mob-row reveal d5">
+        <figure class="cs-mob-shot">
+          <div class="cs-mob-frame">
+            <img src="assets/nutriflow/mobile-upcoming.png" alt="NutriFlow mobile meal plan showing breakfast, lunch, and snacks across the week" width="878" height="1804" loading="lazy" decoding="async">
+          </div>
+          <figcaption>Meal plan: meals the nutritionist assigns show up here automatically, ready to check off.</figcaption>
+        </figure>
+      </div>
+
+      <p class="cs-annot-line reveal d5">
+        <span class="cs-annot-mark" aria-hidden="true"></span>
+        The loop runs both ways. The nutritionist's assigned meals flow into the client's plan; the client's logs and vitals flow back into the nutritionist's progress view.
+      </p>
+
+    </div>
+  </section>
+
+
+  <!-- DASHBOARD -->
+  <section class="cs-section">
+    <div class="container">
+
+      <div class="cs-prose-head reveal">
+        <div class="label">02. Nutritionist dashboard <span class="cs-newpill">0 → 1</span></div>
+        <h2>The missing <em>professional layer.</em></h2>
+        <p class="cs-prose-intro">
+          Designed from scratch. The dashboard is the place where nutritionists connect with clients, see how their week is actually going, and adjust upcoming plans based on what's working.
+        </p>
+      </div>
+
+      <figure class="cs-shot cs-shot-wide reveal d1">
+        <div class="cs-shot-frame">
+          <div class="cs-shot-bar">
+            <span class="cs-shot-dot"></span><span class="cs-shot-dot"></span><span class="cs-shot-dot"></span>
+            <span class="cs-shot-bar-label">Clients</span>
+          </div>
+          <div class="cs-shot-body cs-shot-img">
+            <img src="assets/nutriflow/dashboard-overview.png" alt="NutriFlow dashboard clients page with searchable roster, diet style filters, and status badges" width="2880" height="2048" loading="lazy" decoding="async">
+          </div>
+        </div>
+        <figcaption>The clients roster: searchable, filterable, with macros and active status at a glance.</figcaption>
+      </figure>
+
+      <div class="cs-shot-row reveal d2">
+        <figure class="cs-shot">
+          <div class="cs-shot-frame">
+            <div class="cs-shot-bar"><span class="cs-shot-dot"></span><span class="cs-shot-dot"></span><span class="cs-shot-dot"></span><span class="cs-shot-bar-label">Client profile</span></div>
+            <div class="cs-shot-body cs-shot-img">
+              <img src="assets/nutriflow/dashboard-client-overview.png" alt="NutriFlow client profile drawer showing targets, lifestyle, medical context, and check-in notes" width="2880" height="2048" loading="lazy" decoding="async">
+            </div>
+          </div>
+          <figcaption>Client profile: targets, lifestyle, medical context, check-in notes.</figcaption>
+        </figure>
+        <figure class="cs-shot">
+          <div class="cs-shot-frame">
+            <div class="cs-shot-bar"><span class="cs-shot-dot"></span><span class="cs-shot-dot"></span><span class="cs-shot-dot"></span><span class="cs-shot-bar-label">Progress</span></div>
+            <div class="cs-shot-body cs-shot-img">
+              <img src="assets/nutriflow/dashboard-client-progress.png" alt="NutriFlow client progress dashboard with weight change, glucose, ketones, GKI index, full macros, and all 27 micronutrients" width="2880" height="2048" loading="lazy" decoding="async">
+            </div>
+          </div>
+          <figcaption>Progress: weight, biometrics, macros, the full 27 micronutrients, and trend charts.</figcaption>
+        </figure>
+      </div>
+
+      <p class="cs-annot-line reveal d3">
+        <span class="cs-annot-mark" aria-hidden="true"></span>
+        The progress view ties everything together: macros, biometrics, adherence, and the GKI index in one place.
+      </p>
+
+      <div class="cs-shot-row reveal d3">
+        <figure class="cs-shot">
+          <div class="cs-shot-frame">
+            <div class="cs-shot-bar"><span class="cs-shot-dot"></span><span class="cs-shot-dot"></span><span class="cs-shot-dot"></span><span class="cs-shot-bar-label">Meal chart, empty</span></div>
+            <div class="cs-shot-body cs-shot-img">
+              <img src="assets/nutriflow/dashboard-plan-before.png" alt="NutriFlow meal chart in empty state, a fresh week ready to be planned across breakfast, lunch, snacks, and dinner" width="2880" height="2048" loading="lazy" decoding="async">
+            </div>
+          </div>
+          <figcaption>Empty meal chart: a fresh week ready to be planned.</figcaption>
+        </figure>
+        <figure class="cs-shot">
+          <div class="cs-shot-frame">
+            <div class="cs-shot-bar"><span class="cs-shot-dot"></span><span class="cs-shot-dot"></span><span class="cs-shot-dot"></span><span class="cs-shot-bar-label">Meal chart, planned</span></div>
+            <div class="cs-shot-body cs-shot-img">
+              <img src="assets/nutriflow/dashboard-plan-after.png" alt="NutriFlow meal chart populated with a full week of breakfast, lunch, snacks, and dinner meals with daily macro and calorie totals" width="2880" height="2048" loading="lazy" decoding="async">
+            </div>
+          </div>
+          <figcaption>Same chart, planned: every slot filled, daily macros tallied.</figcaption>
+        </figure>
+      </div>
+
+      <p class="cs-annot-line reveal d4">
+        <span class="cs-annot-mark" aria-hidden="true"></span>
+        Save the chart, and every meal lands in the client's mobile plan instantly. No re-entry, no copy-paste, no waiting.
+      </p>
+
+      <figure class="cs-shot cs-shot-wide reveal d5">
+        <div class="cs-shot-frame">
+          <div class="cs-shot-bar">
+            <span class="cs-shot-dot"></span><span class="cs-shot-dot"></span><span class="cs-shot-dot"></span>
+            <span class="cs-shot-bar-label">Menu, create meal with AI</span>
+          </div>
+          <div class="cs-shot-body cs-shot-img">
+            <img src="assets/nutriflow/create-ai-meal.png" alt="NutriFlow Menu create-meal form with NutriFlow AI suggestions panel offering Mediterranean, vegan, and high-protein recipe prompts" width="2880" height="2048" loading="lazy" decoding="async">
+          </div>
+        </div>
+        <figcaption>Create Meal with NutriFlow AI: prompt by dish or pick from suggested Mediterranean, vegan, and high-protein starters.</figcaption>
+      </figure>
+
+    </div>
+  </section>
+
+
+  <!-- KEY DECISIONS -->
+  <section class="cs-section cs-section-tight">
+    <div class="container">
+
+      <div class="cs-prose-head reveal">
+        <div class="label">Key decisions</div>
+        <h2>The product thinking <em>behind the work.</em></h2>
+      </div>
+
+      <ol class="cs-num-list cs-num-list-2col reveal d1">
+        <li class="cs-num-item">
+          <span class="cs-num-mark">01</span>
+          <div class="cs-num-body">
+            <h3>Two plan paths after signup</h3>
+            <p>App-Guided or Nutritionist-Guided, picked right at signup. The product became flexible for self-directed users and for users who want human accountability.</p>
+          </div>
+        </li>
+        <li class="cs-num-item">
+          <span class="cs-num-mark">02</span>
+          <div class="cs-num-body">
+            <h3>The 8-character connection code</h3>
+            <p>A simple way to link a client app to a nutritionist's dashboard. No friction-heavy onboarding, just a code in and the connection is live.</p>
+          </div>
+        </li>
+        <li class="cs-num-item">
+          <span class="cs-num-mark">03</span>
+          <div class="cs-num-body">
+            <h3>Assigned meals sync to the mobile plan</h3>
+            <p>The nutritionist's chart isn't a separate file. Every meal they assign lands in the client's mobile plan automatically, ready to be checked off. One source of truth, no manual re-entry on either side.</p>
+          </div>
+        </li>
+        <li class="cs-num-item">
+          <span class="cs-num-mark">04</span>
+          <div class="cs-num-body">
+            <h3>Three meal logging methods</h3>
+            <p>Photo (processed with AI), barcode, and nutrition label scanning. Different users log differently, so there are three ways in.</p>
+          </div>
+        </li>
+        <li class="cs-num-item">
+          <span class="cs-num-mark">05</span>
+          <div class="cs-num-body">
+            <h3>Tracking beyond meals</h3>
+            <p>Mood, ketone, and glucose logs give the nutritionist, and the user, more context than food logs alone.</p>
+          </div>
+        </li>
+        <li class="cs-num-item">
+          <span class="cs-num-mark">06</span>
+          <div class="cs-num-body">
+            <h3>Dashboard built around adjustment</h3>
+            <p>Nutritionists needed to act, not just observe. Plan adjustment sits at the center of the dashboard, not tucked into a side menu.</p>
+          </div>
+        </li>
+      </ol>
+
+    </div>
+  </section>
+
+
+  <!-- IMPACT -->
+  <section class="cs-section cs-section-tight">
+    <div class="container">
+
+      <div class="cs-prose-head reveal">
+        <div class="label">Impact</div>
+        <h2>The work, <em>by the numbers.</em></h2>
+        <p class="cs-prose-intro">
+          A single, hard-to-use app became a connected platform where clients track real progress and nutritionists can act on it. These are the wins that mattered most.
+        </p>
+      </div>
+
+      <div class="cs-impact-grid reveal d1">
+        <div class="cs-impact-cell">
+          <div class="cs-impact-cell-value">0 <em>→</em> 1</div>
+          <h3 class="cs-impact-cell-headline">A new nutritionist surface, built from scratch</h3>
+          <p class="cs-impact-cell-detail">The web dashboard didn't exist. Now it's the place where every plan starts, gets adjusted, and shows results.</p>
+        </div>
+        <div class="cs-impact-cell">
+          <div class="cs-impact-cell-value">40<em>%</em> faster</div>
+          <h3 class="cs-impact-cell-headline">Mobile meal logging, three ways in</h3>
+          <p class="cs-impact-cell-detail">AI food photo, barcode, and nutrition label scanning. Friction cut from the action clients repeat most.</p>
+        </div>
+        <div class="cs-impact-cell">
+          <div class="cs-impact-cell-value">30<em>+</em> signals</div>
+          <h3 class="cs-impact-cell-headline">Tracked in one progress view</h3>
+          <p class="cs-impact-cell-detail">Mood, ketones, glucose, GKI Index, macros, and the full 27 micronutrients. Adherence and trend charts included.</p>
+        </div>
+        <div class="cs-impact-cell">
+          <div class="cs-impact-cell-value">1 connected loop</div>
+          <h3 class="cs-impact-cell-headline">Two sides, one shared plan</h3>
+          <p class="cs-impact-cell-detail">Meals assigned in the dashboard show up in the client's app, ready to check off. Logs and vitals flow back the other way.</p>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- VISUAL SYSTEM -->
+  <section class="cs-section">
+    <div class="container">
+
+      <div class="cs-prose-head reveal">
+        <div class="label">Visual system</div>
+        <h2>A modern foundation, <em>built to last.</em></h2>
+        <p class="cs-prose-intro">
+          The interface keeps a calm, health-focused tone. Reusable cards, charts, log components, plan modules, and metric widgets carry the same patterns across both surfaces. Motion is there for clarity, not decoration. The whole system is set up to evolve toward Apple's Liquid Glass direction on iOS 26 when the team is ready.
+        </p>
+      </div>
+
+      <div class="cs-system cs-system-light reveal d1">
+        <div class="cs-system-cell">
+          <span class="cs-system-tag">Cards</span>
+          <div class="cs-system-vis cs-sys-cards"><span></span><span></span></div>
+        </div>
+        <div class="cs-system-cell">
+          <span class="cs-system-tag">Data tables</span>
+          <div class="cs-system-vis cs-sys-table"><span></span><span></span><span></span><span></span></div>
+        </div>
+        <div class="cs-system-cell">
+          <span class="cs-system-tag">Plan modules</span>
+          <div class="cs-system-vis cs-sys-plan"><span></span><span></span><span></span></div>
+        </div>
+        <div class="cs-system-cell">
+          <span class="cs-system-tag">Progress</span>
+          <div class="cs-system-vis cs-sys-progress">
+            <span class="bar"></span>
+            <span class="bar half"></span>
+            <span class="ring"></span>
+          </div>
+        </div>
+        <div class="cs-system-cell">
+          <span class="cs-system-tag">Status badges</span>
+          <div class="cs-system-vis cs-sys-badges">
+            <span class="cs-sys-badge"></span>
+            <span class="cs-sys-badge accent"></span>
+            <span class="cs-sys-badge"></span>
+          </div>
+        </div>
+        <div class="cs-system-cell">
+          <span class="cs-system-tag">Forms and inputs</span>
+          <div class="cs-system-vis cs-sys-form"><span></span><span></span></div>
+        </div>
+        <div class="cs-system-cell">
+          <span class="cs-system-tag">Health metrics</span>
+          <div class="cs-system-vis cs-sys-mob"><span></span><span></span><span></span></div>
+        </div>
+        <div class="cs-system-cell">
+          <span class="cs-system-tag">Empty and loading</span>
+          <div class="cs-system-vis cs-sys-empty"><span></span></div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- REFLECTION -->
+  <section class="cs-section cs-reflect-section">
+    <div class="container">
+      <div class="cs-reflect reveal">
+        <div class="label">Reflection</div>
+        <h2>When product design <em>changes the product.</em></h2>
+        <p>What I take from this project: product design carries the most weight when it changes the product model, not just the surface. The app that existed was a closed loop. You signed up, the algorithm took over, and that was the whole experience. The work turned it into something a client can grow with, alone or alongside a nutritionist.</p>
+        <p>A redesigned mobile app, a new dashboard built from scratch, and a shared visual system. That combination gave the team something that holds up today, and has real room for what they want to build next.</p>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- NEXT PROJECT -->
+  <section class="cs-section cs-next-section">
+    <div class="container">
+      <a class="cs-next reveal" href="index.html#work">
+        <div class="cs-next-l">
+          <span class="cs-next-eyebrow">Continue exploring</span>
+          <h3>3 more <em>case studies.</em></h3>
+          <p>SaaS dashboards, AI product design, fintech, and mobile UX.</p>
+        </div>
+        <div class="cs-next-r" aria-hidden="true">
+          <span class="cs-next-tiles">
+            <span class="cs-next-tile"></span>
+            <span class="cs-next-tile"></span>
+            <span class="cs-next-tile"></span>
+          </span>
+          <span class="cs-next-arrow">
+            <svg viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9L9 3M9 3H4M9 3V8"/></svg>
+          </span>
+        </div>
+      </a>
+    </div>
+  </section>
+
+
+  <!-- CTA -->
+  <section id="contact" class="cta">
+    <div class="inner container">
+      <div class="label reveal">Got a product to simplify?</div>
+      <h2 class="reveal d1">Need help turning a complex product into a <em>clear, scalable</em> digital experience?</h2>
+      <p class="reveal d2 lead">If your product feels dense or hard to move through, I can help reshape the experience without losing the depth that makes it useful.</p>
+      <div class="reveal d3 ctas">
+        <a href="mailto:helloarmaanux@gmail.com" class="btn btn-primary">helloarmaanux@gmail.com <svg viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M3 9L9 3M9 3H4M9 3V8"/></svg></a>
+        <a href="https://cal.com/armaanux/15min" target="_blank" rel="noopener" class="btn btn-ghost">Book a Free Call</a>
+      </div>
+      <div class="reveal d4 meta">
+        <div><div>AVAILABILITY</div><b style="color:var(--accent)">Open</b></div>
+        <div><div>LOCATION</div><b>Remote, India</b></div>
+        <div><div>RESPONSE</div><b>Usually within 12 hours</b></div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<!-- FOOTER -->
+<footer>
+  <div class="container row">
+    <div>© 2026 ARMAAN PARVEZ · ALL RIGHTS RESERVED</div>
+    <div class="links">
+      <a href="https://www.linkedin.com/in/armaanux/" target="_blank" rel="noopener">LINKEDIN</a>
+      <a href="https://www.instagram.com/armaanless" target="_blank" rel="noopener">INSTAGRAM</a>
+      <a href="https://www.figma.com/@armaanux" target="_blank" rel="noopener">FIGMA</a>
+    </div>
+    <div>DESIGNED AND BUILT BY ARMAAN</div>
+  </div>
+</footer>
+
+<script src="scripts/main.js?v=8" defer></script>
+</body>
+</html>
